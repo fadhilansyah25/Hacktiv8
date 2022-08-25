@@ -19,15 +19,12 @@ Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed 
 
 ## HTML Form
 
-- `<form></form>` Tag ini berfungsi untuk membuat sebuah form.
-- `<input></input>` Tag ini berfungsi untuk membuat sebuah input.
-- `<textarea></textarea>` Tag ini berfungsi untuk membuat sebuah textarea.
+`<form></form>` Tag ini berfungsi untuk membuat sebuah form.
+`<input></input>` Tag ini berfungsi untuk membuat sebuah input.
+`<textarea></textarea>` Tag ini berfungsi untuk membuat sebuah textarea.
 
-<details>
-<summary>HTML Attribute Input Type</summary>
-<br/>
+
 <p>Beberapa input type yang dapat digunakan adalah:</p>
-<ul>
 <li><code>type="text"</code> Tag ini berfungsi untuk membuat sebuah input text.</li>
 <li><code>type="password"</code> Tag ini berfungsi untuk membuat sebuah input password.</li>
 <li><code>type="email"</code> Tag ini berfungsi untuk membuat sebuah input email.</li>
@@ -41,5 +38,3 @@ Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed 
 <li><code>type="tel"</code> Tag ini berfungsi untuk membuat sebuah input telepon.</li>
 <li><code>type="submit"</code> Tag ini berfungsi untuk membuat sebuah input submit.</li>
 <li><code>type="reset"</code> Tag ini berfungsi untuk membuat sebuah input reset.</li>
-</ul>
-</details>
