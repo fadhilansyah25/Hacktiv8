@@ -7,7 +7,7 @@ Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed 
 
 ---
 
-#### HTML Tag
+## HTML Tag
 
 - `<html></html>` Bagian ini memperjelas jenis dokumen yang sedang ditampilkan oleh browser adalah HTML5.
 - `<head></head>` Bagian ini berisi informasi yang dibutuhkan untuk menampilkan dokumen HTML.
@@ -17,7 +17,7 @@ Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed 
 - `<img src="" alt=""/>` Tag ini berfungsi untuk menampilkan sebuah gambar dengan attribut pada atribut `src=""` dapat berupa URL maupun alamat path.
 - `a href=""></a>` Tag ini berfungsi untuk membuat sebuah link dengan `href=""` sendiri merupakan perintah yang berfungsi untuk mengarahkan link ke alamat.
 
-#### HTML Form
+## HTML Form
 
 - `<form></form>` Tag ini berfungsi untuk membuat sebuah form.
 - `<input></input>` Tag ini berfungsi untuk membuat sebuah input.
