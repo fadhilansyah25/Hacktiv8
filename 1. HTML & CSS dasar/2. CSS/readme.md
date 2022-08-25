@@ -4,16 +4,16 @@ CSS adalah singkatan dari cascading style sheets, yaitu bahasa yang digunakan un
 
 ---
 
-#### Penulisan CSS
+## Penulisan CSS
 
-###### Inline CSS
+#### Inline CSS
 Inline CSS adalah kode CSS yang dituliskan di dalam file HTML. Jenis CSS ini hanya mempengaruhi satu baris kode HTML. contoh penggunaan inline CSS:
 
 ```html
 <h1  style="font-size:30px; color:blue;">Ini Adalah Judul Berita</h1>
 ```
 
-###### Internal CSS
+#### Internal CSS
 Internal CSS adalah kode CSS yang dituliskan di dalam tag `<style>` dan `</style>`. Jenis CSS ini hanya mempengaruhi satu tag `<style>` dan `</style>`. contoh penggunaan internal CSS:
 
 ```html
@@ -25,7 +25,7 @@ P  { font-size:20px; color:white;  }
 </head>
 ```
 
-###### External CSS
+#### External CSS
 External CSS adalah kode CSS yang dituliskan di dalam file CSS. Jenis CSS ini hanya mempengaruhi satu file CSS. contoh penggunaan external CSS:
 
 ```css
@@ -41,10 +41,10 @@ kemudian kita tambahkan kode CSS di dalam file HTML:
 </head>
 ```
 
-#### CSS Selector
+## CSS Selector
 CSS Selector adalah kode yang digunakan untuk menentukan elemen mana yang akan diubah. 
 
-###### CSS Selector ID
+#### CSS Selector ID
 contoh penggunaan CSS Selector ID:
 
 ```html
@@ -61,7 +61,7 @@ color:blue;
 }
 ```
 
-###### CSS Selector Class
+#### CSS Selector Class
 contoh penggunaan CSS Selector Class:
 
 ```html
@@ -77,7 +77,7 @@ color:blue;
 }
 ```
 
-#### CSS Box Model
+## CSS Box Model
 CSS Box Model adalah sebuah konsep dimana setiap element yang terdapat pada halaman web diproses sebagai kotak (box).
 
 lima buah properti yang ada pada CSS Box Model:
@@ -87,17 +87,17 @@ lima buah properti yang ada pada CSS Box Model:
 - `padding`
 - `border` 
 
-#### CSS Display dan Position
+## CSS Display dan Position
 Display adalah salah satu property dalam CSS yang berguna untuk mengatur tampilnya suatu element. Sedangkan Position adalah salah satu property dalam CSS yang berguna untuk mengatur posisi suatu element.
 
-###### CSS Display
+#### CSS Display
 value dasar dari property `display` adalah `block`. dan beberapa value yang bisa digunakan:
 - `block`
 - `inline`
 - `inline-block`
 - `none`
 
-###### CSS Position
+#### CSS Position
 value dasar dari property `position` adalah `static`. dan beberapa value yang bisa digunakan:
 - `static`
 - `relative`
