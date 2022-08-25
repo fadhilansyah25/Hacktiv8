@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+h1 {
+  font-size: 40;
+}
+
+h2 {
+  font-size: 30;
+}
+
+p {
+    text-align: justify;
+}
+
+#title {
+  text-align: center;
+  color: black;
+}
+
+.input, textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 20px;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 1rem;
+    flex: 1 1 auto;
+}
+
+.blog-post {
+    position: relative;
+    width: 80%;
+    background-color: antiquewhite;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.other-post {
+    box-sizing: border-box;
+    background-color: aqua;
+}
