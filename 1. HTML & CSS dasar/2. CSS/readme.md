@@ -2,8 +2,6 @@
 
 CSS adalah singkatan dari cascading style sheets, yaitu bahasa yang digunakan untuk menentukan tampilan dan format halaman website.
 
----
-
 ## Penulisan CSS
 
 #### Inline CSS

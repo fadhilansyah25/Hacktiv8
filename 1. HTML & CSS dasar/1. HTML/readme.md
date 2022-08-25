@@ -1,11 +1,13 @@
+**Nama: Muhammad Fadil Ardiansyah**
+
+**Nama Program: React and React Native for Front End Developer.**
+
 # HTML Dasar
 
 Hypertext Markup Language atau HTML adalah bahasa markup standar yang digunakan untuk membuat halaman website dan aplikasi web.
 
 Ketika bekerja dengan bahasa markup ini, kita menggunakan struktur kode sederhana (tag dan attribute) untuk mark up halaman website dengan `<>` adalah tag pembuka dan `</>` adalah tag penutup. 
 Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed text di antara tag pembuka `<p>` dan tag penutup `</p>`.
-
----
 
 ## HTML Tag
 
@@ -22,7 +24,6 @@ Misalnya, ketika kita ingin membuat sebuah paragraf dengan menempatkan enclosed 
 `<form></form>` Tag ini berfungsi untuk membuat sebuah form.
 `<input></input>` Tag ini berfungsi untuk membuat sebuah input.
 `<textarea></textarea>` Tag ini berfungsi untuk membuat sebuah textarea.
-
 
 <p>Beberapa input type yang dapat digunakan adalah:</p>
 <li><code>type="text"</code> Tag ini berfungsi untuk membuat sebuah input text.</li>
