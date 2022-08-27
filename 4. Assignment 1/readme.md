@@ -9,7 +9,7 @@ Hasil Akhir:
 
 ## Overview singkat
 
-#### HTML
+### HTML
 
 Mengimpor library javascript math.js untuk kalkulasi otomatis hasil dari string perhitungan matematika.
 
@@ -34,7 +34,9 @@ Tag HTML input dengan dibawah, berfungsi untuk menampilkan input perhitungan mat
 <input id="display" type="text" value="0" disabled>
 ```
 
-#### CSS
+---
+
+### CSS
 
 Pada kode css dibawah, container dari tombol menggunakan grid untuk mengatur jumlah kolom dan jarak antar kolom.
 
@@ -47,7 +49,9 @@ Pada kode css dibawah, container dari tombol menggunakan grid untuk mengatur jum
 }
 ```
 
-#### JavaScript
+---
+
+### JavaScript
 
 Menangkap dom element display untuk memanipulasi display.
 
