@@ -1,6 +1,6 @@
 # Intro To Modern Javascript
 
-## Variable Declaration
+## Deklarasi Variabel
 
 Sebelum ES6 hanya ada satu cara untuk membuat variabel
 
@@ -21,7 +21,7 @@ const x = 1 // declaration
 x = 3 // assignment // error
 ```
 
-### The Problem with var
+### Masalah yang ada pada deklarasi var
 
 var memang terlihat simple, tapi ada beberapa kasus yang sering membuat bingung. beberapa masalah yang ada pada var adalah:
 
