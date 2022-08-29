@@ -103,3 +103,66 @@ Boolean adalah tipe data yang berisi true atau false.
 let isMarried = false
 console.log(isMarried) //=> false
 ```
+
+## Array
+
+Array adalah tipe data yang berisi banyak nilai.
+
+```javascript
+let names = ['John', 'Mary', 'Mark']
+console.log(names) //=> ['John', 'Mary', 'Mark']
+```
+
+Ada beberapa operasi array yang sering digunakan. Contohnya:
+
+#### Merge dua atau lebih array
+
+Menggabungkan 2 array menjadi 1 array baru
+
+
+```javascript
+let arr1 = [1, 2, 3]
+let arr2 = [4, 5, 6]
+let arr3 = arr1.concat(arr2)
+console.log(arr3) //=> [1, 2, 3, 4, 5, 6]
+```
+
+#### Menghapus item pada array
+
+Jika ingin menghapus item pada array dengan syarat sudah mengetahui indexnya, maka gunakan method splice.
+
+```javascript
+let arr = [1, 2, 3, 4, 5]
+arr.splice(2, 1) //=> [3]
+console.log(arr) //=> [1, 2, 4, 5]
+```
+
+#### Mengosongkan array
+
+untu menghapus semua item pada array ada 2 cara yang dapat digunakan:
+
+Cara pertama dengan mengosongkannya langsung:
+
+```javascript
+var arr1 = ['a','b','c','d','e','f'];
+var arr2 = arr1;  // Reference arr1 by another variable 
+arr1 = [];
+console.log(arr2); // Output ['a','b','c','d','e','f']
+```
+
+Cara kedua dengan menggunakan method splice:
+
+```javascript
+let arr = [1, 2, 3, 4, 5]
+arr.splice(0, arr.length) //=> []
+console.log(arr) //=> []
+```
+
+#### Array multidimensi
+
+Array multidimensi adalah array yang berisi array.
+
+```javascript
+let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+console.log(arr) //=> [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
