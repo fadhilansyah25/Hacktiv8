@@ -153,8 +153,86 @@ function Person() {
 const p = new Person();
 ```
 
-## A bit functional side of JavaScript
+## Higher-order function and callback function
 
-Higher-order function and callback function
+Selalu ada kebingungan yang membedakan antara Higher-order Function dengan Callback Function.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Higher-Order Functions(HoF) and Callback Functions(CB) are different.<br><br>- HoF: A function that takes another function(s) as an argument(s) and/or returns a function to the caller.<br>- CB: A function that is passed to another function.<br><br>Usages? More coming on this topic. Stay tuned. <a href="https://t.co/P0nt0jVmH8">pic.twitter.com/P0nt0jVmH8</a></p>&mdash; Tapas Adhikary (@tapasadhikary) <a href="https://twitter.com/tapasadhikary/status/1473596864096309252?ref_src=twsrc%5Etfw">December 22, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+- Higher-order Function (HoF): Fungsi yang mengambil fungsi lain sebagai argumen dan/atau mengembalikan fungsi sebagai return value.
+- Callback Function (CB): Fungsi yang dijadikan argumen fungsi lain kemudian dipanggil di dalam fungsi tersebut.
+
+```javascript
+function HigherOrderFunction(callback) {
+    // Do something
+    // ...
+
+
+    callback(); Invoke the callback.
+
+    // ...
+    // Do something
+}
+```
+
+[Higher-Order Functions(HoF) in JavaScript - Explain Like I'm Five](https://blog.greenroots.info/higher-order-functions-in-javascript)
+
+## Filter
+
+filter adalah method array yang mengembalikan array yang berisi element yang memenuhi kondisi tertentu.
+
+```javascript
+let students = [
+  {
+    name: "Arrizal",
+    isGraduated: true,
+    score: 100,
+  },
+  {
+    name: "Mandra",
+    isGraduated: false,
+    score: 42,
+  },
+  {
+    name: "Ladu singh",
+    isGraduated: true,
+    score: 80,
+  },
+  {
+    name: "Meimei",
+    isGraduated: false,
+    score: 51,
+  },
+];
+
+const graduatedStudent = students.filter(
+  (student) => student.isGraduated
+);
+console.log(graduatedStudent); // [{name: "Arrizal", isGraduated: true, score: 100}, {name: "Ladu singh", isGraduated: true, score: 80}]
+
+```
+
+## Reduce
+
+Reduce adalah method array yang mengembalikan sebuah nilai berdasarkan proses penjumlahan dari array.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((acc, curr) => acc + curr);
+console.log(sum); // 15
+```
+
+
+## Map
+
+Map adalah method array yang mengembalikan sebuah array yang berisi hasil dari proses pemanggilan fungsi pada setiap element array.
+
+```javascript
+students = students.map((student) => {
+  return {
+    ...student,
+    name: student.name.toUpperCase(),
+    age: 19,
+  };
+});
+
+console.log(students); // [{name: "ARRIZAL", isGraduated: true, score: 100, age: 19}, {name: "MANDRA", isGraduated: false, score: 42, age: 19}, {name: "LADU SINGH", isGraduated: true, score: 80, age: 19}, {name: "MEIMEI", isGraduated: false, score: 51, age: 19}]
+```

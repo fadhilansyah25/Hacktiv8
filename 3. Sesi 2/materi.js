@@ -149,9 +149,9 @@ students.forEach((el) => {
   console.log(el.name);
 });
 
-// const graduatedStudent = students.filter(
-//   (student) => student.isGraduated
-// );
+  // const graduatedStudent = students.filter(
+  //   (student) => student.isGraduated
+  // );
 
 // const initialValue = 0;
 // const studentsGrades =
