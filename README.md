@@ -3,16 +3,20 @@
 This my personal documention from Hacktiv8 React &amp; React Native Class Kampus Merdeka Bacth 3
 
 <br/>
+<br/>
 
-<div style="display: flex;">
+<div align="center" width="100%">
 
-<div style="margin: 0 10px">
-<a href="https://www.kode.id" target="_blank"><img src="https://import.cdn.thinkific.com/236035/LOeri7TYTomO5itkgBT8_Logo-Kode-2020-dark.png" width="500px" alt="kode.id logo"></a>
-</div>
+<h2>Big Thanks to</h2>
 
-<div style="margin: 0 10px">
+<br/>
+
+<a href="https://www.kode.id" target="_blank"><img src="https://import.cdn.thinkific.com/236035/LOeri7TYTomO5itkgBT8_Logo-Kode-2020-dark.png" width="40%" alt="kode.id logo"></a>
+
+<br/>
+<br/>
+
 <a href="https://kampusmerdeka.kemdikbud.go.id" target="_blank"><img
-src="https://stmikgici.ac.id/wp-content/uploads/2020/09/MASTER.png" width="400px" alt="kampus merdeka logo"></a>
-</div>
+src="https://stmikgici.ac.id/wp-content/uploads/2020/09/MASTER.png" width="35%" alt="kampus merdeka logo"></a>
 
 </div>
