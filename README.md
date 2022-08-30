@@ -1,3 +1,9 @@
+<style>
+td, th {
+   border: none!important;
+}
+</style>
+
 # Hacktiv8 React and React Native Camp
 
 This my personal documention from Hacktiv8 React &amp; React Native Class Kampus Merdeka Bacth 3
