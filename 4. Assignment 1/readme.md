@@ -1,15 +1,21 @@
-# Calculator Sederhana
+<div align="center">
 
-Membuat caculator sederhana dengan HTML, CSS, dan JavaScript.
+<h1>Calculator Sederhana</h1>
+
+</div>
+
+
+#### Membuat caculator sederhana dengan HTML, CSS, dan JavaScript.
 
 Hasil Akhir:
+
 <div align="center" width="100%">
 <img src="hasil-akhir-calculator-sederhana.png" alt="" srcset="">
 </div>
 
-## Overview singkat
+<br/>
 
-### HTML
+## HTML
 
 Mengimpor library javascript math.js untuk kalkulasi otomatis hasil dari string perhitungan matematika.
 
@@ -34,7 +40,7 @@ Tag HTML input dengan dibawah, berfungsi untuk menampilkan input perhitungan mat
 <input id="display" type="text" value="0" disabled>
 ```
 
----
+<br/>
 
 ### CSS
 
@@ -49,7 +55,7 @@ Pada kode css dibawah, container dari tombol menggunakan grid untuk mengatur jum
 }
 ```
 
----
+<br/>
 
 ### JavaScript
 

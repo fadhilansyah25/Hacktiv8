@@ -1,4 +1,10 @@
-# Intro To Modern Javascript
+<div align="center">
+
+<h1>Intro To Modern Javascript</h1>
+
+</div>
+
+<br/>
 
 ## Deklarasi Variabel
 
@@ -51,7 +57,7 @@ if (true){
 console.log(b) //=> 3
 ```
 
-#### Perbedaan var, let, dan const
+### Perbedaan var, let, dan const
 
 |           | Redeclare | Hoisting | Block Scope | Create Global Props |
 | --------- | --------- | -------- | ----------- | ------------------- |
@@ -71,6 +77,8 @@ let let = "Holaaa" //=> Syntax Error
 
 untuk reserved keyword yang lainnya, bisa dilihat di [Lexical grammar - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#reserved_words)
 
+<br/>
+
 ## Tipe Data
 
 Di JavaScript tipe data yang paling umum digunakan adalah:
@@ -78,7 +86,7 @@ Di JavaScript tipe data yang paling umum digunakan adalah:
 - string
 - boolean
 
-#### Number
+### Number
 Number adalah tipe data yang berisi angka.
 
 ```javascript
@@ -88,7 +96,7 @@ let area = height * width
 console.log(area) //=> 600
 ```
 
-#### String
+### String
 String adalah tipe data yang berisi karakter.
 
 ```javascript
@@ -96,13 +104,15 @@ let name = "John"
 console.log(name) //=> John
 ```
 
-#### Boolean
+### Boolean
 Boolean adalah tipe data yang berisi true atau false.
 
 ```javascript
 let isMarried = false
 console.log(isMarried) //=> false
 ```
+
+<br/>
 
 ## Array
 
@@ -115,7 +125,7 @@ console.log(names) //=> ['John', 'Mary', 'Mark']
 
 Ada beberapa operasi array yang sering digunakan. Contohnya:
 
-#### Merge dua atau lebih array
+### Merge dua atau lebih array
 
 Menggabungkan 2 array menjadi 1 array baru
 
@@ -127,7 +137,7 @@ let arr3 = arr1.concat(arr2)
 console.log(arr3) //=> [1, 2, 3, 4, 5, 6]
 ```
 
-#### Menghapus item pada array
+### Menghapus item pada array
 
 Jika ingin menghapus item pada array dengan syarat sudah mengetahui indexnya, maka gunakan method splice.
 
@@ -137,7 +147,7 @@ arr.splice(2, 1) //=> [3]
 console.log(arr) //=> [1, 2, 4, 5]
 ```
 
-#### Mengosongkan array
+### Mengosongkan array
 
 untu menghapus semua item pada array ada 2 cara yang dapat digunakan:
 
@@ -158,7 +168,7 @@ arr.splice(0, arr.length) //=> []
 console.log(arr) //=> []
 ```
 
-#### Array multidimensi
+### Array multidimensi
 
 Array multidimensi adalah array yang berisi array.
 
