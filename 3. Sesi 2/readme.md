@@ -1,4 +1,10 @@
-# Sesi 2 Javascript Lanjutan
+ <div align="center">
+ 
+ <h1>Javascript Lanjutan</h1>
+ 
+ </div>
+
+<br/>
 
 ## Object
 
@@ -13,6 +19,8 @@ const obj = {
     isMarried: false
 }
 ```
+
+<br/>
 
 ## Destructuring
 
@@ -52,6 +60,8 @@ const [year, make, model, price, color] = arr;
 console.log(year, make, model, price, color); // 1997 Ford E350 3000 blue
 ```
 
+<br/>
+
 ## This keyword
 
 this adalah keyword yang mengembalikan referensi ke object yang sedang diakses.
@@ -73,6 +83,8 @@ this seringkali merupakan variabel global. Contohnya jika di front-end atau di b
 ```javascript
 this === window; // true
 ```
+
+<br/>
 
 ## Arrow Function and bind()
 
@@ -153,6 +165,8 @@ function Person() {
 const p = new Person();
 ```
 
+<br/>
+
 ## Higher-order function and callback function
 
 Selalu ada kebingungan yang membedakan antara Higher-order Function dengan Callback Function.
@@ -174,6 +188,8 @@ function HigherOrderFunction(callback) {
 ```
 
 [Higher-Order Functions(HoF) in JavaScript - Explain Like I'm Five](https://blog.greenroots.info/higher-order-functions-in-javascript)
+
+<br/>
 
 ## Filter
 
@@ -210,6 +226,8 @@ console.log(graduatedStudent); // [{name: "Arrizal", isGraduated: true, score: 1
 
 ```
 
+<br/>
+
 ## Reduce
 
 Reduce adalah method array yang mengembalikan sebuah nilai berdasarkan proses penjumlahan dari array.
@@ -220,6 +238,7 @@ const sum = numbers.reduce((acc, curr) => acc + curr);
 console.log(sum); // 15
 ```
 
+<br/>
 
 ## Map
 
