@@ -1,4 +1,10 @@
-# Javascript OOP
+<div align="center">
+
+<h1>Javascript OOP</h1>
+
+</div>
+
+<br/>
 
 ## Class
 
@@ -19,6 +25,8 @@ e1.doWork(); // "Completed work"
 ```
 
 Pada kode diatas Employee merupakan blue print dari object yang akan dibuat. Sedangkan e1 adalah object instance dari Employee.
+
+<br/>
 
 ## Constructor
 
@@ -41,6 +49,8 @@ class Employee {
 var e1 = new Employee("John", 30);
 e1.doWork(); // "John is working"
 ```
+
+<br/>
 
 ## Class Inheritance and Overriding
 
@@ -100,6 +110,7 @@ d1.doWork(); // "Mary is working" /n "Mary is designing with Photoshop"
 
 Pada kode diatas kita bisa melihat bahwa pada class Programmer dan Designer memiliki method doWork yang berbeda. Namun kita bisa memanggil method doWork pada object instance pada class Programmer dan Designer dengan cara yang sama. ini bisa disebut sebagai polymorphism.
 
+> ...
 > Note: penjelasan mengenai polymorphism dapat dibaca pada artikel ini:
 > - [Polymorphism in javacript - geeksforgeeks.org](https://https://www.geeksforgeeks.org/polymorphism-in-javascript/)
 > - [Pengertian Polimorfisme Dalam Pemrograman Java - dicoding.com](https://www.dicoding.com/blog/pengertian-polimorfisme-dalam-pemrograman-java/)
@@ -110,6 +121,8 @@ Pada kode diatas kita bisa melihat bahwa pada class Programmer dan Designer memi
 Perhatikan pada kode diatas, terdapat keyword super pada class inheritance. Super berfungsi untuk mengcopy properti dan method dari class parent ke class child.
 
 Keyword super juga dapat digunakan untuk mengakses method dari class dan memanggilnya langsung di dalam method class child.
+
+<br/>
 
 ## Class Static Initialization
 
@@ -133,6 +146,8 @@ console.log(Car.getCompany()); // BMW
 ```
 
 Pada kode diatas bisa dilihat jika instance object dari class memanggil method atau properti statis, maka akan mengembalikan nilai undefined.
+
+<br/>
 
 ## Encapsulation in a Javascript class
 
