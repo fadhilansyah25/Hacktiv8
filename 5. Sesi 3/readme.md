@@ -207,3 +207,147 @@ const c1 = new Car();
 c1.clutch(); // Error
 c1.getClutch(); // Clutching...
 ```
+
+<br/>
+
+## Javascript Asynchronous
+
+**Synchronus vs Asynchronus**
+Dalam dunia programming kedua istilah ini digunakan untuk membedakan tentang cara urutan eksekusi perintah-perintah kode yang telah dituliskan.
+
+Synchronous adalah yang paling umum dan mudah di mengerti. Setiap perintah di eksekusi satu persatu sesuai urutan kode yang dituliskan. Contoh :
+
+```javascript
+console.log('Hello')  
+console.log('Javascript')
+console.log('Coder')
+
+/*
+Output :
+Hello!
+Javascipt
+Coder
+*/
+```
+Output dari kode diatas dijamin akan sesuai urutan, karena setiap perintah harus menunggu perintah sebelumnya selesai. Proses seperti ini disebut **‘blocking’**. Dalam dunia nyata ini mirip seperti antrian di BANK. Jika anda berada antrian nomor 4, maka anda akan dilayani setelah antrian 1–3 sampai selesai.
+
+Sedangkan **Asynchronous** hasil eksekusi atau output tidak selalu berdasarkan urutan kode, tetapi berdasarkan waktu proses. Eksekusi dengan asynchronous tidak akan membloking atau menunggu suatu perintah sampai selesai. Daripada menunggu, asynchronous akan mengeksekusi perintah selanjutnya. Wait, sampai disini mungkin tidak masuk akal
+
+```javascript
+console.log('Hello')
+setTimeout(() => {
+    console.log('Javascript')
+} , 2000)
+console.log('Coder')
+
+/*
+Output :
+Hello!
+Coder
+Javascript
+*/
+```
+
+Catatan :
+Pada baris ke 2 setTimeout digunakan untuk menunda eksekusi dalam satuan milisecond dalam hal ini untuk simulasi prosess async.
+
+Perhatikan bahwa outputnya tidak berurutan sesuai input (kode). Karena cara kerja asynchronous adalah berdasarkan waktu proses. Jika ada salah satu eksekusi membutuhkan proses yang agak lama, maka sembari menunggu prosess tersebut javascript mengeksekusi perintah selanjutnya.
+
+### Promise
+
+Promise adalah fungsi yang dibuat untuk menghandle proses asynchronous. Dalam dunia promise analogi di atas juga sama, ketika melakukan request asynchronous seperti Ajax, maka ada 3 kemungkinan state :
+
+- Pending : Proses sedang berjalan
+- fulfilled : Proses berhasil
+- rejected : Proses gagal
+
+Untuk membuat promise cukup dengan memanggil constructor Promise.
+
+```javascript
+let promise = new Promise()
+consloe.log(promise) 
+
+// Output : Promise {<pending>}
+```
+
+`Sampai disini output dari code atas adalah Promise { <pending> }`
+
+Lalu bagaimana untuk mengatur state Fullfilled dan Reject? Untuk state ini gunakan salah satu listener, resolve() atau reject()
+
+```javascript
+let promise = new Promise((resolve, reject) => {
+  // salah satu dari 2 callback ini akan dijalankan
+  // resolve('Success')
+  // reject('Error')
+})
+
+// Untuk menggunakan promise diatas gunakan method then dan catch
+promise
+  .then((result) => {console.log(result)})
+  .catch((error) => {console.log(error)})
+```
+
+Output dari code diatas ada 2 kemungkinan,
+
+- Jika comment pada resolve( ) di hapus maka hasilnya “berhasil”
+- Jika comment pada reject( ) di hapus maka hasilnya “Janji di batalkan”
+
+Untuk belajar mengenai promise, silahkan baca tutorial di link berikut :
+[Panduan Komplit Asynchronous Programming pada Javascript — Part #3 Promise](https://medium.com/coderupa/panduan-komplit-asynchronous-programming-pada-javascript-part-3-promise-819ce5d8b3c)
+
+### Async/Await
+
+Async/await adalah fitur yang hadir sejak ES2017. Fitur ini mempermudah kita dalam menangani proses asynchronous. Untuk memahami async/await sebaiknya anda harus memahami promise terlebih dahulu.
+
+Ada 2 kata kunci disini yaitu async dan await, mari kita lihat contohnya :
+
+```javascript
+async function Hello() {
+  result = await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Hello')
+    }, 1000)
+  })
+  console.log(result)
+}
+```
+
+Keterangan :
+- **async** → mengubah function menjadi asynchronous
+- **await** → menunda eksekusi hingga proses asynchronous selesai, dari kode di atas berarti console.log(result) tidak akan di eksekusi sebelum prose doAsync( ) selesai. await juga bisa digunakan berkali-kali di dalam function
+
+Contoh perbedaan fetch dengan promise dan async/await :
+
+**Promised**
+
+```javascript
+function fetchWithPromise(endpoint + id) {
+  fetch(endpoint + id)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+}
+```
+
+**Async/await**
+
+```javascript
+async function fetchWithAsyncAwait(endpoint + id) {
+  try {
+    const response = await fetch(endpoint + id)
+    const data = await response.json()
+    console.log(data)
+  } catch (error) {
+    console.log(error)
+  }
+}
+```
+
+Error handling pada async/await menggunakan try…catch
+
+Untuk belajar mengenai async/await, silahkan baca tutorial di link berikut :
+[Panduan Komplit Asynchronous Programming pada Javascript — Part #4 Async/await](https://medium.com/coderupa/panduan-komplit-asynchronous-programming-pada-javascript-part-4-async-await-fc504c344238)
