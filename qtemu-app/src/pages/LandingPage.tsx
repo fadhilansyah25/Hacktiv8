@@ -1,37 +1,27 @@
 import React, { Component } from "react";
+import MeetupData from "./meetup.json";
 
-type MyState = {
-  pastMeetups: {
-    date: string;
-    eventName: string;
-    members: number;
-  }[];
+type Meetup = {
+  id: number;
+  date: string;
+  eventName: string;
+  members: number;
 };
 
-export default class LandingPage extends Component<{}, MyState> {
-  state: MyState = {
-    pastMeetups: [
-      {
-        date: "27 November 2017",
-        eventName: "#39 JakartaJS April Meetup with Kumparan",
-        members: 139,
-      },
-      {
-        date: "27 October 2017",
-        eventName: "#38 JakartaJS April Meetup with BliBli",
-        members: 113,
-      },
-      {
-        date: "27 September 2017",
-        eventName: "#37 JakartaJS April Meetup with Hactiv8",
-        members: 110,
-      },
-    ],
+type CompState = {
+  pastMeetups: Array<Meetup>;
+};
+
+export default class LandingPage extends Component<{}, CompState> {
+  state: CompState = {
+    pastMeetups: MeetupData,
   };
 
   render() {
     return (
       <>
+      
+        {/* Navbar Component */}
         <nav className="h-14 bg-neutral-500">
           <div className="container max-w-5xl mx-auto flex justify-between items-center h-full">
             <div className="flex">
@@ -49,8 +39,10 @@ export default class LandingPage extends Component<{}, MyState> {
             </div>
             <p className="text-right text-white">Login</p>
           </div>
-        </nav>
+        </nav> 
+        {/* End of Navbar Component */}
 
+        {/* Main content */}
         <div className="max-w-5xl mx-auto">
           <div className="grid m-4 grid-flow-row grid-cols-12 bg-neutral-300 p-4">
             <div className="photo col-span-4 h-80 mr-10 bg-neutral-400"></div>
@@ -76,7 +68,9 @@ export default class LandingPage extends Component<{}, MyState> {
             </div>
           </div>
         </div>
+        {/* End of Main content */}
 
+        {/* Next Meetup Description */}
         <div className="container max-w-5xl mx-auto mt-10">
           <h1 className="text-2xl	font-bold mb-2">Hacktiv8</h1>
           <div className="px-2">
@@ -105,7 +99,9 @@ export default class LandingPage extends Component<{}, MyState> {
             </div>
           </div>
         </div>
+        {/* End of Next Meetup Description */}
 
+        {/* About Meetup Description */}
         <div className="container max-w-5xl mx-auto mt-10">
           <h1 className="text-2xl	font-bold mb-2">About Meetup</h1>
           <div className="px-2">
@@ -116,7 +112,9 @@ export default class LandingPage extends Component<{}, MyState> {
             <p>Twitter: @JakartaJS and we use the hashtag #jakartajs</p>
           </div>
         </div>
+        {/* End of About Meetup Description */}
 
+        {/* Members Meetup Details */}
         <div className="container max-w-5xl mx-auto mt-10">
           <div className="flex justify-between">
             <h1 className="text-2xl	font-bold mb-2">Members</h1>
@@ -135,7 +133,9 @@ export default class LandingPage extends Component<{}, MyState> {
             </div>
           </div>
         </div>
+        {/* End of Members Meetup Details */}
 
+        {/* Past Meetups Descrition*/}
         <div className="container max-w-5xl mx-auto mt-10">
           <div className="flex justify-between">
             <h1 className="text-2xl	font-bold mb-2">Past Meetups</h1>
@@ -166,10 +166,14 @@ export default class LandingPage extends Component<{}, MyState> {
             ))}
           </div>
         </div>
+        {/* End of Past Meetups Descrition*/}
 
+        {/* Footer */}
         <footer className="container max-w-5xl py-10 mx-auto text-center mt-10 border-t-2 border-black">
           <p>Copyright Hacktiv8 2018</p>
         </footer>
+        {/* End of Footer */}
+
       </>
     );
   }
