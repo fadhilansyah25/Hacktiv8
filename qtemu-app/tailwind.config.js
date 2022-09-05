@@ -4,12 +4,14 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
     extend: {},
-    ontainer: {
+    container: {
       // you can configure the container to be centered
       center: true,
 
       // or have default horizontal padding
-      padding: '1rem',
+      padding: {
+        DEFAULT: '1rem',
+      },
 
       // default breakpoints but with 40px removed
       screens: {

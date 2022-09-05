@@ -8,4 +8,8 @@ Buatlah sebuah aplikasi meetup clone satu halaman dalam satu file js atau jsx sa
 
 Gunakan create-react-app.
 
-![alt](./docs/qtemu-example.png)
+<div align="center">
+
+<img src="./docs/qtemu-example.png" alt="qtemu wireframe">
+
+</div>
