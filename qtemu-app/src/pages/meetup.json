@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "date": "27 November 2017",
+      "eventName": "#39 JakartaJS April Meetup with Kumparan",
+      "members": 139
+    },
+    {
+      "id": 2,
+      "date": "27 October 2017",
+      "eventName": "#38 JakartaJS April Meetup with BliBli",
+      "members": 113
+    },
+    {
+      "id": 3,
+      "date": "27 September 2017",
+      "eventName": "#37 JakartaJS April Meetup with Hactiv8",
+      "members": 110
+    }
+  ]
