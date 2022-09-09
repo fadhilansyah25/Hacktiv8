@@ -1,20 +1,26 @@
 [
-    {
-      "id": 1,
-      "date": "27 November 2017",
-      "eventName": "#39 JakartaJS April Meetup with Kumparan",
-      "members": 139
-    },
-    {
-      "id": 2,
-      "date": "27 October 2017",
-      "eventName": "#38 JakartaJS April Meetup with BliBli",
-      "members": 113
-    },
-    {
-      "id": 3,
-      "date": "27 September 2017",
-      "eventName": "#37 JakartaJS April Meetup with Hactiv8",
-      "members": 110
-    }
-  ]
+  {
+    "id": 1,
+    "date": "27 November 2017",
+    "eventName": "#39 JakartaJS April Meetup with Kumparan",
+    "members": 139,
+    "imageUrl": "https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque."
+  },
+  {
+    "id": 2,
+    "date": "27 October 2017",
+    "eventName": "#38 JakartaJS April Meetup with BliBli",
+    "members": 113,
+    "imageUrl": "https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque."
+  },
+  {
+    "id": 3,
+    "date": "27 September 2017",
+    "eventName": "#37 JakartaJS April Meetup with Hactiv8",
+    "members": 110,
+    "imageUrl": "https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260",
+    "description": "Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque."
+  }
+]
