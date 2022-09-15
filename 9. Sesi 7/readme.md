@@ -1,4 +1,4 @@
-# React JS Basics 
+# React Component Lifecycle, Fetch Data, dan Study Case
 
 <br/>
 
